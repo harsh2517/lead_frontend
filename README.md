@@ -1,40 +1,20 @@
-# Lead Management Frontend
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-## Run
+# Run and deploy your AI Studio app
 
-```bash
-npm install
-npm run dev
-```
+This contains everything you need to run your app locally.
 
-## Env
+View your app in AI Studio: https://ai.studio/apps/e01dd8e8-9851-4cfb-bfff-2a666dc051f7
 
-Create `.env`:
+## Run Locally
 
-```env
-VITE_API_BASE_URL=https://lead-backend-5w9l.onrender.com
-```
+**Prerequisites:**  Node.js
 
-## Backend APIs used
 
-- `POST /user/login?email=&password=`
-- `POST /user/sign-up?email=&password=`
-- `GET /lead/get`
-- `POST /lead/upload-csv` with multipart `file` and repeated `columns`
-
-CSV column mapping order sent to backend:
-
-1. firstName
-2. lastName
-3. email
-4. country
-5. industry
-6. phone
-7. companyName
-8. verifiedStatus
-9. verifiedOn
-10. campaignId
-11. campaignOfInstantly
-12. title
-13. website
-14. leadstatus
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
